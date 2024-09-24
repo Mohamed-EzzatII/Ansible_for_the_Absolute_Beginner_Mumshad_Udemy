@@ -1,5 +1,4 @@
 
-```markdown
 # Learn Ansible Course Study Guide
 
 ![Ansible Logo](https://www.ansible.com/hubfs/ansible-hero-logofinal.png) 
