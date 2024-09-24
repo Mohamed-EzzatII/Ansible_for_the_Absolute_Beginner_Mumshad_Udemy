@@ -1,0 +1,13 @@
+# ex1 : execute the date command on localhost and display the output in the
+# console
+# cmd : ansible-playbook -i inventory.ini 01_playbook_ex1.yaml  --connection=local
+- name: play1
+  hosts: localhost
+  tasks:
+    - name: "execute date command"
+      ansible.builtin.command: date
+      register: date_output # store the output in that variable
+    
+    - name: "display the output"
+      debug:
+        var: date_output.stdout # output the date 
